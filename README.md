@@ -5,9 +5,7 @@
   Free content workflow for founders and creators.
 </p>
 
-<p align="center">
-  <a href="https://personal-content-helper.stamped.work"><strong>Live app</strong></a>
-</p>
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js" alt="Next.js 14" />
