@@ -1,18 +1,12 @@
-<p align="center">
-  <img src="docs/images/logo.png" alt="Content OS" width="80" height="80" />
-</p>
-
-<h1 align="center">Content OS</h1>
+<h1 align="center">Personal Content Helper</h1>
 
 <p align="center">
   <strong>From discovery to draft - on your terms.</strong><br />
-  Free, open-source content workflow for founders and creators.
+  Free content workflow for founders and creators.
 </p>
 
 <p align="center">
-  <a href="https://content-os.stamped.work"><strong>Live app</strong></a> ·
-  <a href="https://github.com/Vinayak-RZ/Content-OS/issues">Report bug</a> ·
-  <a href="https://github.com/Vinayak-RZ/Content-OS/issues/new">Request feature</a>
+  <a href="https://personal-content-helper.stamped.work"><strong>Live app</strong></a>
 </p>
 
 <p align="center">
@@ -24,9 +18,9 @@
 
 ---
 
-## Why Content OS exists
+## Why Personal Content Helper exists
 
-Building a personal brand should not start with endless scrolling. Content OS pulls **high-signal topics** from the sources you already read, **ranks them against your knowledge base**, and **drafts in your voice** - without auto-posting, without a subscription, and with your API keys under your control.
+Building a personal brand should not start with endless scrolling. Personal Content Helper pulls **high-signal topics** from the sources you already read, **ranks them against your knowledge base**, and **drafts in your voice** - without auto-posting, without a subscription, and with your API keys under your control.
 
 | Principle | What it means |
 |-----------|----------------|
@@ -40,7 +34,7 @@ Building a personal brand should not start with endless scrolling. Content OS pu
 ## Screenshots
 
 <p align="center">
-  <img src="docs/images/landing.png" alt="Content OS landing page" width="900" />
+  <img src="docs/images/landing.png" alt="Personal Content Helper landing page" width="900" />
   <br /><em>Landing - discovery to draft on your terms</em>
 </p>
 
@@ -141,8 +135,8 @@ flowchart LR
 ### Install
 
 ```bash
-git clone https://github.com/Vinayak-RZ/Content-OS.git
-cd Content-OS/content-os   # if monorepo; else cd into repo root
+git clone https://github.com/your-username/personalcontenthelper.git
+cd personalcontenthelper
 npm install
 cp .env.example .env.local
 ```
@@ -201,13 +195,13 @@ Users add **Tavily**, **Firecrawl**, and draft provider keys in **Settings** (st
 
 ## Deploy to Vercel
 
-1. Import the repo; set **Root Directory** to `content-os` if this is a monorepo.
+1. Import the repo.
 2. Add all env vars from `.env.example`.
 3. Set production URLs:
 
    ```env
-   NEXTAUTH_URL=https://content-os.stamped.work
-   NEXT_PUBLIC_APP_URL=https://content-os.stamped.work
+   NEXTAUTH_URL=https://personal-content-helper.stamped.work
+   NEXT_PUBLIC_APP_URL=https://personal-content-helper.stamped.work
    ```
 
 4. Run migrations against production once:
@@ -238,7 +232,7 @@ Users add **Tavily**, **Firecrawl**, and draft provider keys in **Settings** (st
 ## Project structure
 
 ```
-content-os/
+personalcontenthelper/
 ├── app/
 │   ├── (auth)/          # Login, onboarding
 │   ├── (dashboard)/     # Dashboard, drafts, knowledge, analytics, settings
@@ -276,18 +270,6 @@ Authenticated unless noted.
 
 ---
 
-## Contributing
-
-Contributions are welcome - especially discovery sources, ranking improvements, and docs.
-
-1. Fork the repo and create a branch from `main`.
-2. Make focused changes; run `npm run lint` and `npm run build`.
-3. Open a PR with a clear description and screenshots for UI changes.
-
-Use [GitHub Issues](https://github.com/Vinayak-RZ/Content-OS/issues) for bugs and feature requests.
-
----
-
 ## Security
 
 - API keys encrypted at rest with `ENCRYPTION_KEY` (AES-256-GCM).
@@ -295,7 +277,7 @@ Use [GitHub Issues](https://github.com/Vinayak-RZ/Content-OS/issues) for bugs an
 - Do not commit `.env` or `.env.local`.
 - Org admin key export requires `ADMIN_SECRET` - see [docs/admin_api_keys_export.md](../docs/admin_api_keys_export.md).
 
-Report security issues privately via GitHub Issues (mark as sensitive) or contact the maintainer.
+Report security issues privately by contacting the maintainer.
 
 ---
 
@@ -305,7 +287,7 @@ Report security issues privately via GitHub Issues (mark as sensitive) or contac
 |-----|-------------|
 | [docs/admin_api_keys_export.md](../docs/admin_api_keys_export.md) | Org admin key export |
 | [DESIGN_v1.md](../DESIGN_v1.md) | Stamped design system |
-| [docs/content_os_overview.md](../docs/content_os_overview.md) | Product overview |
+| [docs/personal_content_helper_overview.md](../docs/personal_content_helper_overview.md) | Product overview |
 | [docs/LAUNCH_PLAYBOOK.md](../docs/LAUNCH_PLAYBOOK.md) | Launch checklist |
 
 ---
