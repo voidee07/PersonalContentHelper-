@@ -298,8 +298,3 @@ Report security issues privately by contacting the maintainer.
 
 ---
 
-<p align="center">
-  <img src="docs/images/logo.png" alt="" width="32" height="32" />
-  <br />
-  <sub>Built for founders who want signal over noise.</sub>
-</p>
